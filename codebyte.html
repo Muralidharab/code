@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      .tablrResult{
+          margin-top: 9%;
+          margin-left: 40%;
+      }
+      .tables,th,td{
+        border:1px solid black;
+      }
+  </style>
+  
+
+  <script>
+      function getCellValue(params) {
+         var table =  document.getElementById('mytable')
+         for (var r = 0, n = table.row.length ; r<n; r++)
+         alert(table.row[r].cell[c].innerHTML)
+      }
+      
+  </script>
+
+</head>
+<body>
+
+    <form class="tablrResult">
+
+        <select name="" id=""> 
+            
+            <option value="Select Status">Select Status</option>
+            <option value="Active">Active</option>
+            <option value="Retired">Retired</option>
+            <option value="Unknown">Unknown</option>
+            <option value="Destroyed">Destroyed</option>
+        </select>
+        
+        <button style="background-color: blue">Load</button>
+
+        
+    </form>
+
+    <table class="tables" id="mytable">
+        <tr>
+            <th>Capsule ID</th>
+            <th>No of missions</th>
+            <th>Details</th>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
